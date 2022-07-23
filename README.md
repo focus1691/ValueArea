@@ -1,7 +1,9 @@
 # Value Area Calculation
+
 FRVP Technical Indicator for Value Area calculations: pdVA, pwVA, pmVA
 
 ## Intro
+
 - A calculator for the Fixed Range Volume Profile in TypeScript.
 - By default, the histogram will use **24 rows** like TradingView.
 - It can calculate values for the **current & previous day**, **current & previous week**, **current & previous month**.
