@@ -140,10 +140,10 @@ export class ValueArea {
     return { VAH, VAL }
   }
 
-  getLevelsForPeriod(data: any, period: TIME_PERIODS, goToPreviousPeriod: boolean) {
+  getLevelsForPeriod(data: any, period: TIME_PERIODS, currentPeriod: moment.Moment, goToPreviousPeriod: boolean) {
     // We need to start at the start of the (day / week / month), in order to filter all the klines for the VA calculations for that period
     // current day vs previous day, current week vs previous week, current month vs previous month
-    const from: moment.Moment = goToPreviousPeriod ? moment().subtract(1, period).startOf(period) : moment().startOf(period)
+    const from: moment.Moment = goToPreviousPeriod ? currentPeriod.subtract(1, period).startOf(period) : currentPeriod.startOf(period)
     const periodicKlines = data.filter(({ open_time }) => moment(open_time * 1000).isSame(from, period))
 
     const { V_TOTAL, highest, lowest }: { V_TOTAL: number, highest: number, lowest: number } = this.sumVolumes(periodicKlines)
