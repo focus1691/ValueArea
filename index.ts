@@ -1,5 +1,6 @@
 import moment from 'moment'
 import { IVolumeRow, TIME_PERIODS } from './types'
+import { countDecimals } from './utils'
 
 function round(number: number, precision: number = 2) {
   if (precision < 0) {
@@ -40,7 +41,8 @@ export class ValueArea {
   valueAreaHistogram(klines, highest: number, lowest: number) {
     let row = 0
     const range: number = highest - lowest
-    const stepSize: number = round(range / this.nRows)
+    const nDecimals = Math.max(countDecimals(highest), countDecimals(lowest))
+    const stepSize: number = round(range / this.nRows, nDecimals)
 
     const histogram: IVolumeRow[] = []
     let POC_ROW: number = 0
@@ -49,9 +51,9 @@ export class ValueArea {
     while (histogram.length < this.nRows) {
       histogram.push({
         volume: 0,
-        low: round(lowest + stepSize * row),
-        mid: round(lowest + stepSize * row + stepSize / 2),
-        high: round(lowest + stepSize * row + stepSize)
+        low: round(lowest + stepSize * row, nDecimals),
+        mid: round(lowest + stepSize * row + stepSize / 2, nDecimals),
+        high: round(lowest + stepSize * row + stepSize, nDecimals)
       } as IVolumeRow)
       row++
     }
