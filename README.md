@@ -1,7 +1,5 @@
 # Value Area Calculation
 
-[Read the blog post](https://www.joshuaali.com/blog/how-to-calculate-value-area)
-
 FRVP Technical Indicator for Value Area calculations: pdVA, pwVA, pmVA
 
 ## Intro
