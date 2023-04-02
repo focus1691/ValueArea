@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="#">
-    <img src="https://raw.githubusercontent.com/github/explore/main/topics/typescript/typescript.png" alt="Value Area Calculation" width="200">
-  </a>
-</p>
 <h1 align="center">Value Area Calculation</h1>
 <p align="center">FRVP Technical Indicator for Value Area calculations: pdVA, pwVA, pmVA</p>
 <h2 align="center">Introduction</h2>
