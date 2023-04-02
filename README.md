@@ -13,14 +13,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="64" height="64">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="64" height="64">
 </p>
-<h2 align="center">Installation</h2>
-To use the Value Area Calculation package, install it using npm:
 
-To use the Value Area Calculation package, install it using npm:
-
-bash
-Copy code
-npm install value-area-calculation
 <h2 align="center">Usage</h2>
 To use the Value Area Calculation package, import it into your project and use it like this:
 
