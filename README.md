@@ -1,6 +1,5 @@
-<h1 align="center">Value Area Calculation</h1>
-<p align="center">FRVP Technical Indicator for Value Area calculations: pdVA, pwVA, pmVA</p>
-<h2 align="center">Introduction</h2>
+<h1>Value Area Calculation</h1>
+<h2>Introduction</h2>
 <ul>
   <li>A calculator for the Fixed Range Volume Profile in TypeScript.</li>
   <li>By default, the histogram will use <strong>24 rows</strong> like TradingView.</li>
@@ -8,13 +7,8 @@
   <li>Values returned are <strong>Point of Control (POC)</strong>, <strong>Value Area High (VAH)</strong>, <strong>Value Area Low (VAL)</strong>, <strong>low</strong>, <strong>high</strong>.</li>
   <li>There is test data that uses <strong>ByBit Kline data</strong>, and it currently only handles that data.</li>
 </ul>
-<h2 align="center">Technologies used in this project</h2>
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="64" height="64">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="64" height="64">
-</p>
 
-<h2 align="center">Usage</h2>
+<h2>Usage</h2>
 To use the Value Area Calculation package, import it into your project and use it like this:
 
 ```ts
@@ -26,9 +20,4 @@ const result = pdVA(myData, 4)
 
 console.log(result)
 ```
-
-<h2 align="center">Contributing</h2>
-Contributions to the project are always welcome! Please open an issue or a pull request if you'd like to contribute.
-
-<h2 align="center">License</h2>
-This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more information.
+📦 Part of the [chart-patterns Library](https://github.com/focus1691/chart-patterns)
